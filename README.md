@@ -4,7 +4,7 @@ A shite game.
 
 ## Installation
 
-Clone this repo to your local machine, then open index.html.
+Clone this repo to your local machine, then open index.html in your browser.
 
 ## How to Play
 
