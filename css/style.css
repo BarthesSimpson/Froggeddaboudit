@@ -1,3 +1,26 @@
 body {
     text-align: center;
+    background-color: black;
 }
+
+.jumbotron {
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	text-transform: uppercase;
+	font-size: 8em;
+	color: red;
+	-webkit-transition: left 1.9s;
+	-moz-transition: left 1.9s;
+	-ms-transition: left 1.9s;
+	transition: left 1.9s;
+}
+
+.jumbotron.fly {
+	left: 50%;
+}
+
+// img {
+// 	position: absolute;
+// 	left: -999999px;
+// }
