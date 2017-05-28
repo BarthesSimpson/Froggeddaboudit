@@ -21,7 +21,7 @@ Enemy.prototype.update = function(dt) {
   // which will ensure the game runs at the same speed for
   // all computers.
 
-  this.x = this.x + (this.speed * dt);
+  this.x += (this.speed * dt);
 
   //regenerate after going off screen
   if (this.x >= 500) {
