@@ -37,8 +37,8 @@ Enemy.prototype.update = function(dt) {
 };
 //randomly reinitialize enemy so the pattern is not too predictable
 Enemy.prototype.reset = function() {
-  this.x = cols[Math.floor(Math.random() * 7)]
-  this.y = rows[Math.floor(Math.random() * 3)]
+  this.x = cols[Math.floor(Math.random() * 7)];
+  this.y = rows[Math.floor(Math.random() * 3)];
 };
 // Draw the enemy on the screen, required method for game
 Enemy.prototype.render = function() {
@@ -69,24 +69,24 @@ Player.prototype.handleInput = function(type) {
       if (this.x > 0) {
         this.x -= moveSize;
       }
-      return
+      return;
     case 'right':
       if (this.x < 400) {
         this.x += moveSize;
       }
-      return
+      return;
     case 'up':
       if (this.y > -50) {
         this.y -= moveSize;
       }
-      return
+      return;
     case 'down':
       if (this.y < 400) {
         this.y += moveSize;
       }
-      return
+      return;
     default:
-      return
+      return;
   }
 };
 
@@ -102,9 +102,9 @@ var rows = [60, 140, 220];
 //randomly generate some enemies
 var allEnemies = [];
 for (var i = 0; i < numEnemies; i++) {
-  var x = cols[Math.floor(Math.random() * 7)]
-  var y = rows[Math.floor(Math.random() * 3)]
-  var e = Math.floor(Math.random() * 2)
+  var x = cols[Math.floor(Math.random() * 7)];
+  var y = rows[Math.floor(Math.random() * 3)];
+  var e = Math.floor(Math.random() * 2);
   allEnemies.push(new Enemy(x, y, e));
 }
 
